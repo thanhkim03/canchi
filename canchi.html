@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inp">
+<button onclick="ok()">KQ</button>
+<h1 id="hihi"></h1>
+<script>
+    function ok() {
+        let year = +document.getElementById("inp").value
+        let canchi = ''
+        switch (year % 10) {
+            case 0:
+                canchi += 'canh '
+                break
+            case 1:
+                canchi += 'thân '
+                break
+            case 2:
+                canchi += 'nhâm '
+                break
+            case 3:
+                canchi += 'quý '
+                break
+            case 4:
+                canchi += 'giáp '
+                break
+            case 5:
+                canchi += 'ất '
+                break
+            case 6:
+                canchi += 'bính '
+                break
+            case 7:
+                canchi += 'đinh '
+                break
+            case 8:
+                canchi += 'mậu '
+                break
+            case 9:
+                canchi += 'kỷ '
+                break
+
+        } switch (year % 12) {
+            case 0:
+                canchi += 'thân '
+                break
+            case 1:
+                canchi += 'dậu '
+                break
+            case 2:
+                canchi += 'tuất '
+                break
+            case 3:
+                canchi += 'hợi '
+                break
+            case 4:
+                canchi += 'tý '
+                break
+            case 5:
+                canchi += 'sửu '
+                break
+            case 6:
+                canchi += 'dần '
+                break
+            case 7:
+                canchi += 'mão '
+                break
+            case 8:
+                canchi += 'thìn '
+                break
+            case 9:
+                canchi += 'tị '
+                break
+            case 10:
+                canchi += 'ngọ '
+                break
+
+
+
+        }
+
+        document.getElementById('hihi').innerHTML=canchi;
+
+    }
+</script>
+</body>
+</html>
